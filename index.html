@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Barber - Premium Barbershop</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@300;400;500;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">ELITE</span>
+                <span class="logo-sub">BARBER</span>
+            </div>
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Strona główna</a></li>
+                <li class="dropdown">
+                    <a href="#services" class="nav-link">Usługi</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="pages/services/haircut.html">Strzyżenie Męskie</a></li>
+                        <li><a href="pages/services/beard-trim.html">Strzyżenie Brody</a></li>
+                        <li><a href="pages/services/shaving.html">Rytuał Golenia</a></li>
+                        <li><a href="pages/services/coloring.html">Koloryzacja</a></li>
+                        <li><a href="pages/services/styling.html">Stylizacja & Upiększanie</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#locations" class="nav-link">Gdzie nas znajdziesz</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="pages/locations/location1.html">Centrum - ul. Główna 50</a></li>
+                        <li><a href="pages/locations/location2.html">Stare Miasto - ul. Krakowska 12</a></li>
+                        <li><a href="pages/locations/location3.html">Kazimierz - ul. Dietla 80</a></li>
+                        <li><a href="pages/locations/location4.html">Podgórze - ul. Wielicka 55</a></li>
+                        <li><a href="pages/locations/location5.html">Nowa Huta - ul. Widaka 30</a></li>
+                        <li><a href="pages/locations/location6.html">Zwierzyniec - ul. Chałubińskiego 5</a></li>
+                        <li><a href="pages/locations/location7.html">Krowodrza - ul. Włodykowa 20</a></li>
+                    </ul>
+                </li>
+                <li><a href="#pricing" class="nav-link">Cennik</a></li>
+                <li><a href="https://booksy.com" class="nav-link cta-link" target="_blank">Zarezerwuj</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="word">NAJLEPSZY</span>
+                    <span class="word">BARBER</span>
+                    <span class="word">SHOP</span>
+                </h1>
+                <p class="hero-subtitle">Premium usługi pielęgnacji dla prawdziwych panów</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">4.8</span>
+                        <span class="stat-label">z 5.0</span>
+                        <span class="stat-desc">Na podstawie 2500+ opinii</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-number">7</span>
+                        <span class="stat-label">Lokalizacji</span>
+                        <span class="stat-desc">W całym mieście</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="https://booksy.com" class="btn btn-primary" target="_blank">Zarezerwuj online</a>
+                    <a href="tel:+48123456789" class="btn btn-secondary">📞 +48 123 456 789</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-placeholder">
+                    <svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#d4af37;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#8b7500;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <!-- Head -->
+                        <circle cx="200" cy="120" r="60" fill="url(#grad1)"/>
+                        <!-- Beard -->
+                        <path d="M 150 160 Q 200 200 250 160" stroke="url(#grad1)" stroke-width="30" fill="none" stroke-linecap="round"/>
+                        <!-- Neck -->
+                        <rect x="170" y="180" width="60" height="40" fill="url(#grad1)"/>
+                        <!-- Shoulders -->
+                        <ellipse cx="200" cy="260" rx="120" ry="80" fill="#1a1a1a"/>
+                        <!-- Shirt -->
+                        <path d="M 80 260 L 200 500 L 320 260 Z" fill="#0d0d0d"/>
+                    </svg>
+                </div>
+                <div class="floating-element element-1">✂</div>
+                <div class="floating-element element-2">💈</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Preview Section -->
+    <section class="services-preview" id="services">
+        <div class="section-header">
+            <h2 class="section-title">Nasze Usługi Premium</h2>
+            <p class="section-subtitle">Każda usługa wykonana z precyzją i pasją</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">✂</div>
+                <h3>Strzyżenie Męskie</h3>
+                <p>Profesjonalne strzyżenie dopasowane do kształtu twarzy i stylu życia.</p>
+                <div class="price">od 110 zł</div>
+                <a href="pages/services/haircut.html" class="service-link">WIĘCEJ</a>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🧔</div>
+                <h3>Strzyżenie Brody</h3>
+                <p>Precyzyjne przycinanie i stylizacja brody z użyciem premium kosmetyków.</p>
+                <div class="price">od 90 zł</div>
+                <a href="pages/services/beard-trim.html" class="service-link">WIĘCEJ</a>
+            </div>
+            <div class="service-card bestseller">
+                <div class="bestseller-badge">BESTSELLER</div>
+                <div class="service-icon">🪮</div>
+                <h3>Rytuał Golenia</h3>
+                <p>Luksusowe golenie brzytwą z gorącym ręcznikiem i rytuałem pielęgnacyjnym.</p>
+                <div class="price">od 120 zł</div>
+                <a href="pages/services/shaving.html" class="service-link">WIĘCEJ</a>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🎨</div>
+                <h3>Koloryzacja</h3>
+                <p>Profesjonalna koloryzacja włosów i brody z użyciem najlepszych farb.</p>
+                <div class="price">od 100 zł</div>
+                <a href="pages/services/coloring.html" class="service-link">WIĘCEJ</a>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">💇</div>
+                <h3>Stylizacja & Upiększanie</h3>
+                <p>Pełny zabiegi stylizacji i pielęgnacji dla nowoczesnych panów.</p>
+                <div class="price">od 150 zł</div>
+                <a href="pages/services/styling.html" class="service-link">WIĘCEJ</a>
+            </div>
+        </div>
+        <div class="services-cta">
+            <a href="#pricing" class="btn btn-primary">ZOBACZ PEŁEN CENNIK</a>
+        </div>
+    </section>
+
+    <!-- Guarantee Section -->
+    <section class="guarantee">
+        <div class="guarantee-content">
+            <h2>Gwarancja Satysfakcji</h2>
+            <p>W Elite Barber każda wizyta to doświadczenie premium. Gwarantujemy 100% satysfakcji z każdej usługi. Nie wyjdziesz od nas, dopóki nie będziesz w pełni zadowolony z efektu.</p>
+            <p class="guarantee-bold">To nasza obietnica dla każdego Gentlemana.</p>
+        </div>
+        <div class="guarantee-icon">✓</div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="section-header">
+            <h2 class="section-title">Cennik Usług</h2>
+            <p class="section-subtitle">Przejrzyste ceny bez ukrytych opłat</p>
+        </div>
+        <div class="pricing-table">
+            <div class="pricing-row">
+                <div class="pricing-service">Strzyżenie Męskie</div>
+                <div class="pricing-price">110 zł</div>
+            </div>
+            <div class="pricing-row">
+                <div class="pricing-service">Strzyżenie Brody</div>
+                <div class="pricing-price">90 zł</div>
+            </div>
+            <div class="pricing-row highlight">
+                <div class="pricing-service">Rytuał Golenia</div>
+                <div class="pricing-price">120 zł</div>
+            </div>
+            <div class="pricing-row">
+                <div class="pricing-service">Koloryzacja Włosów</div>
+                <div class="pricing-price">100 zł</div>
+            </div>
+            <div class="pricing-row">
+                <div class="pricing-service">Koloryzacja Brody</div>
+                <div class="pricing-price">80 zł</div>
+            </div>
+            <div class="pricing-row">
+                <div class="pricing-service">Stylizacja Włosów</div>
+                <div class="pricing-price">150 zł</div>
+            </div>
+            <div class="pricing-row">
+                <div class="pricing-service">Pielęgnacja Skóry Twarzy</div>
+                <div class="pricing-price">95 zł</div>
+            </div>
+            <div class="pricing-row">
+                <div class="pricing-service">Kompleksowy Pakiet</div>
+                <div class="pricing-price">250 zł</div>
+            </div>
+        </div>
+        <div class="pricing-note">
+            <p>*Wszystkie ceny zawierają usługę pielęgnacji i konsultacji</p>
+        </div>
+    </section>
+
+    <!-- Locations Preview -->
+    <section class="locations-preview">
+        <div class="section-header">
+            <h2 class="section-title">Gdzie nas Znajdziesz</h2>
+            <p class="section-subtitle">7 lokalizacji w całym mieście</p>
+        </div>
+        <div class="locations-grid">
+            <a href="pages/locations/location1.html" class="location-card">
+                <div class="location-number">1</div>
+                <h3>Centrum</h3>
+                <p>ul. Główna 50</p>
+            </a>
+            <a href="pages/locations/location2.html" class="location-card">
+                <div class="location-number">2</div>
+                <h3>Stare Miasto</h3>
+                <p>ul. Krakowska 12</p>
+            </a>
+            <a href="pages/locations/location3.html" class="location-card">
+                <div class="location-number">3</div>
+                <h3>Kazimierz</h3>
+                <p>ul. Dietla 80</p>
+            </a>
+            <a href="pages/locations/location4.html" class="location-card">
+                <div class="location-number">4</div>
+                <h3>Podgórze</h3>
+                <p>ul. Wielicka 55</p>
+            </a>
+            <a href="pages/locations/location5.html" class="location-card">
+                <div class="location-number">5</div>
+                <h3>Nowa Huta</h3>
+                <p>ul. Widaka 30</p>
+            </a>
+            <a href="pages/locations/location6.html" class="location-card">
+                <div class="location-number">6</div>
+                <h3>Zwierzyniec</h3>
+                <p>ul. Chałubińskiego 5</p>
+            </a>
+            <a href="pages/locations/location7.html" class="location-card">
+                <div class="location-number">7</div>
+                <h3>Krowodrza</h3>
+                <p>ul. Włodykowa 20</p>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Elite Barber</h4>
+                <p>Premium barbershop dla panów, którzy dbają o styl i wizerunek.</p>
+                <div class="social-links">
+                    <a href="https://facebook.com" target="_blank">f</a>
+                    <a href="https://instagram.com" target="_blank">📷</a>
+                    <a href="https://google.com" target="_blank">G</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Szybkie Linki</h4>
+                <ul>
+                    <li><a href="#home">Strona główna</a></li>
+                    <li><a href="#services">Usługi</a></li>
+                    <li><a href="#pricing">Cennik</a></li>
+                    <li><a href="https://booksy.com" target="_blank">Rezerwacja</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Kontakt</h4>
+                <p>📞 +48 123 456 789</p>
+                <p>📧 kontakt@elitebarber.pl</p>
+                <p>⏰ Pon-Pt: 08:00 - 21:00<br>Sobota: 08:00 - 21:00<br>Niedziela: 12:00 - 20:00</p>
+            </div>
+            <div class="footer-section">
+                <h4>Rezerwacja</h4>
+                <a href="https://booksy.com" class="btn btn-primary" target="_blank">Zarezerwuj teraz</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Elite Barber. Wszelkie prawa zastrzeżone.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
